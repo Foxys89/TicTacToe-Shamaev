@@ -2,10 +2,14 @@ board = [['-'] * 3 for i in range(3)]
 
 current_player = 0
 def board_show():
+    n = 0
+    print('''  0 1 2''')
     for i in board:
-        for i2 in i:
-            print(i2, end = ' ')
-        print()
+        print(n, *i, end='\n')
+        n += 1
+
+
+
 
 def turn_checker():
     global current_player
