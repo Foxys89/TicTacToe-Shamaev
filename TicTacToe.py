@@ -9,14 +9,13 @@ def board_show():
         n += 1
 
 
-
-
 def turn_checker():
     global current_player
     if current_player:
         print('''Ход игрока 2!''')
     else:
         print('''Ход игрока 1!''')
+
 
 def check_end():
     for i in board:
@@ -67,6 +66,8 @@ def check_end():
     else:
         import sys
         sys.exit('''Ничья!''')
+
+
 def turn():
     global current_player
     turn_checker()
